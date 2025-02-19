@@ -1,0 +1,20 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "martin.harlaut",email = "119311227+Mart1670@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "uvicorn (>=0.34.0,<0.35.0)",
+    "fastapi (>=0.115.8,<0.116.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start= "app.main:start"
